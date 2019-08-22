@@ -2,9 +2,9 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import Headline from './index';
 
-import { findByTestAtrr, checkProps } from './../../../Utils';
+import { findByTestAtrr, checkProps } from '../../../Utils';
 
-const setUp = (props={}) => {
+const setUp = (props = {}) => {
     const component = shallow(<Headline {...props} />);
     return component;
 };
